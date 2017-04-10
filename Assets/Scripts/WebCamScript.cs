@@ -25,4 +25,5 @@ public class WebCamScript : MonoBehaviour {
 			transform.eulerAngles = Camera.main.transform.eulerAngles + zAxis;
 		}
 	}
+		
 }
