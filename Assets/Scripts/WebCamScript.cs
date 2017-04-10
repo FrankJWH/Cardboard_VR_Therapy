@@ -23,7 +23,6 @@ public class WebCamScript : MonoBehaviour {
 		if (viewTilt is float) {
 			zAxis = new Vector3 (0, 0, viewTilt);
 			transform.eulerAngles = Camera.main.transform.eulerAngles + zAxis;
-		} else
-			Debug.Log ("Not a float");
+		}
 	}
 }
