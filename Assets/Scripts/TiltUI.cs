@@ -48,9 +48,8 @@ public class TiltUI : MonoBehaviour {
 
 	// UI button listener
 	void TaskOnClick() {
-		canvasUI.enabled = false;
+		//canvasUI.enabled = false;
 		VRSettings.enabled = true;
-		StartCoroutine (TogglePause());
 	}// TaskOnClick()
 
 	// displays the tilt UI menu when screen is in VR mode and user touches screen
