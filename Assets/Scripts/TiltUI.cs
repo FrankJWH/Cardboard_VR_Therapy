@@ -26,13 +26,14 @@ public class TiltUI : MonoBehaviour {
 
 		foreach (Touch touch in Input.touches) {
 			if (touch.phase == TouchPhase.Began && VRSettings.enabled == true) {
-				displayUI ();
+				//displayUI ();
 			}
 			//StartCoroutine (TogglePause ());
 		}
 
 		if(Input.GetMouseButtonDown (0)) {
-			displayUI ();
+			//displayUI ();
+				
 		}
 
 		// tester for VR toggle without UI, works without problem
@@ -48,7 +49,7 @@ public class TiltUI : MonoBehaviour {
 
 	// UI button listener
 	void TaskOnClick() {
-		//canvasUI.enabled = false;
+		canvasUI.enabled = false;
 		VRSettings.enabled = true;
 	}// TaskOnClick()
 

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class WebCamScript : MonoBehaviour {
 
-	float viewTilt;
+	static float viewTilt;
 	public Text userInput;
 	Vector3 zAxis;
 
@@ -25,5 +25,7 @@ public class WebCamScript : MonoBehaviour {
 			transform.eulerAngles = Camera.main.transform.eulerAngles + zAxis;
 		}
 	}
+		
+	static float getViewTilt() { return viewTilt; }
 		
 }
